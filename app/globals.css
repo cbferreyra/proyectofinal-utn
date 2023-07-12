@@ -1,0 +1,9 @@
+/* Reset css */
+*{
+ box-sizing: border-box; 
+ padding: 0;
+ margin: 0;  
+}
+body{
+    background: rgb(248, 248, 191);
+}

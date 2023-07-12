@@ -1,7 +1,9 @@
+
+
 export default function Home() {
   return (
     <main>
-      <h1>Cambio para ir probando</h1>
+      <h1>Esta es la home del sitio</h1>
     </main>
   );
 }
