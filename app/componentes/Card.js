@@ -1,5 +1,12 @@
+//"use client";
+import { use } from "react";
 import "./Card.css";
+import VerDetalle from "../funciones";
+
 export default function Card({ producto }) {
+  /* const verDetalle = () => {
+    console.log("el boton funcioa");
+  }; */
   return (
     <div className="card">
       <img src={producto.imagen} alt="" />
@@ -12,9 +19,12 @@ export default function Card({ producto }) {
           {producto.envio && <p className="envio">Envío gratis</p>}
         </div>
       </div>
-      <div className="cardBoton">
-        <button className="botonComprar">Ver detalles</button>
-      </div>
+      <VerDetalle />
+      {/* <div className="cardBoton">
+        <button className="botonComprar" onClick={VerDetalle}>
+          Ver detalles
+        </button>
+      </div> */}
     </div>
   );
 }
